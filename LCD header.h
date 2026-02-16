@@ -81,14 +81,3 @@ void lcd_string(unsigned char *s)
     lcd_cmd(0xC0);			
 		}
 }
-
-
-
-
-void lcd_clear(void)
-{
-	              lcd_cmd(0x01);
-						  	delay_ms(8);
-							  lcd_cmd(0x80);
-							  lcd_cmd(0x28);
-}
